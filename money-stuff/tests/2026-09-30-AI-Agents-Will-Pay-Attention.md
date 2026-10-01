@@ -3,7 +3,7 @@
 
 September 30, 2026
 
-## Attention is all you need
+# Attention is all you need
 
 My little financials dispersion trade is:
 
@@ -43,7 +43,7 @@ While you sleep! I simply cannot stress enough how much “enabling investors to
 
 I once wrote that, “for equity market makers, there are few more beautiful phrases in the English language than ‘day trader and volleyball-programs coordinator’”: What you want, in a customer, is someone who trades a lot with no edge. But “day trader and volleyball-programs coordinator who trades in his sleep” is obviously better!
 
-## Man City
+# Man City
 
 We talked a few weeks ago about the National Basketball Association’s investigation into the Los Angeles Clippers. Basically:
 
@@ -83,7 +83,7 @@ The core situation is that sports teams’ owners are generally limited in how m
 
 Incidentally. Most professional sports leagues have rules like this, capping teams’ spending, because if they didn’t (1) teams might spend unsustainably in a zero-sum race to win championships and (2) the teams with the richest and most profligate owners would win. And those things, the theory goes, would be bad. A lot of people seem to find that logic basically compelling. But you don’t have to. From another angle, this is pretty straightforward cartel stuff, restricting competition to save the team owners money. If you’re the owner of a basketball or soccer team, spending caps are obviously good for you, unless maybe you’re the richest owner in your league and care more about winning than money. But if you’re a basketball or soccer player, spending caps mean that you get paid less than your free-market value. For pretty obvious reasons (money, also winning), you might prefer to play for the teams that break the rules.
 
-## Cotton
+# Cotton
 
 The business of a middleman is buying low and selling high. If someone wants to sell you a stock or a bond or a commodity or a painting or a Pokémon or a whatever for $100 right now, and someone else wants to buy it from you for $120 right now, good deal for you. 
 
@@ -114,7 +114,7 @@ One of the companies settled with the CFTC just before the end of the Biden admi
 
 “They were a bit slow in filling out paperwork” is one way to put it, and sounds like no big deal. “They effectively lied to their counterparties about the prices they were getting for cotton” is the other way to put it.
 
-## CEO succession
+# CEO succession
 
 Investment banking runs on an apprenticeship model, but I have always thought that it’s not an especially well-designed apprenticeship. The approximate way that it works is:
 

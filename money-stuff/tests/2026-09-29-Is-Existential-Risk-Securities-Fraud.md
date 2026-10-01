@@ -3,7 +3,7 @@
 
 September 29, 2026
 
-## Sub-existential risk
+# Sub-existential risk
 
 One thing that artificial intelligence labs’ frontier models have gotten up to recently is hacking into companies’ and governments’ computer systems. If you are worried about AI as an existential threat to humanity, these hacking incidents probably make you more worried. The worries you had — that AI alignment is a hard problem, that AI systems can disguise their non-alignment, that AI containment is a hard problem, that AI agents can selflessly coordinate with each other to outwit humans, etc. — all seem to have been strengthened by those incidents. The best-known form of this argument is Dwarkesh Patel on the Hugging Face incident. Dario Amodei’s call to “pace the frontier” was in part a response to hacking incidents. 
 
@@ -37,7 +37,7 @@ The Anthropic prospectus is not public yet, but it does seem to be circulating, 
 
 If humanity no longer exists, you’re not going to sue Anthropic for inadequate disclosure, so in some sense that one’s just for fun. But if Claude goes around blackmailing world leaders, that’s probably going to cause the stock to drop, so that has to be disclosed.
 
-## Agentic bank run
+# Agentic bank run
 
 We have talked a couple of times recently about the importance of inertia and inattention in retail finance, and the risk that agentic artificial intelligence will reduce that inertia. Lots of retail-facing financial businesses have the form “we don’t have to pay a market rate for ____, because our customers don’t pay attention.”
 
@@ -73,7 +73,7 @@ And here is a Politico story about the regulatory and lobbying response:
 
 Also, of course: Is this a risk factor in the Anthropic IPO? I kind of think no: If AI agents bring down the banking system by working as designed, I’m not sure Anthropic would incur liability. On the other hand, “our AI agents might bring down the banking system by sweeping deposits into higher-yielding accounts, and if the banking system collapsed that would make it harder for us to manage our cash and could disrupt our business” is the sort of creative risk-factoring that I want to see in that prospectus.
 
-## 351 exchanges
+# 351 exchanges
 
 The basic theory is:
 
@@ -111,7 +111,7 @@ Sure. But what if it was less cute? What if you plop your stocks into the ETF, a
 
 You can keep doing this in an appropriate manner, but not in an inappropriate manner, I guess. The rule is that you can’t get too cute, though it doesn’t make it entirely clear what counts as too cute.
 
-## A guy abandoned $1bn of Nvidia stock in a garbage dump
+# A guy abandoned $1bn of Nvidia stock in a garbage dump
 
 Not really, but here’s a blog post from Eric Gullichsen about the time he was granted 25,000 Nvidia stock options in 1993, exercised 15,625 of them in 1996, and then forgot about the remaining 9,375 shares for decades. At some point he discovered that he was actually owed those shares, which, because of stock splits and Nvidia’s growth into the biggest company in the world, are now 4.5 million shares worth about $1 billion. He asked Nvidia for the shares, Nvidia “did not dispute the authenticity of the option agreement, only that my claims were long since time-barred,” and ultimately “my attorneys and I concluded that the statute of limitations was against us” and gave up.
 

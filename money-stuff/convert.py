@@ -2,14 +2,14 @@
 
 Input: the JSON saved by the Gmail connector's get_message (FULL_CONTENT), i.e. an object with
 `subject`, `internalDate` and `htmlBody`.
-Output: <outdir>/yyyy-mm-dd-Email-Title.md, UTF-8, CRLF, matching the hand-made format:
+Output: <outdir>/yyyy-mm-dd-Email-Title.md, UTF-8, CRLF:
 
     (blank line)
     # Money Stuff: <title>
 
     <Month d, yyyy>
 
-    ## <section>
+    # <section>          (H1, not H2: VoiceStudio's audiobook makes a chapter per "# " heading)
 
     <paragraph>
 
@@ -63,7 +63,7 @@ def convert(html):
             if title.lower() == STOP_HEADER:
                 break
             started = True
-            lines += ["", f"## {title}"]
+            lines += ["", f"# {title}"]
             prev = "h"
             continue
         if not started or (el.name == "p" and el.find_parent("li")):
@@ -108,7 +108,7 @@ def main():
         return
 
     body = convert(html)
-    if not any(l.startswith("## ") for l in body):
+    if not any(l.startswith("# ") for l in body):
         sys.exit("no section headers found; email layout may have changed")
     lines = ["", f"# {subject}", "", f"{sent:%B} {sent.day}, {sent.year}"] + body
     path.write_bytes("\r\n".join(lines).encode("utf-8"))
