@@ -2,8 +2,9 @@
 """Small helpers for the grain-migration skill (stdlib only).
 
   python grain_helper.py dates
-      Prints JSON: {"prev_business_day": "YYYY-MM-DD", "tomorrow_utc": "YYYY-MM-DDT00:00:00Z", "now": <epoch seconds>}
-      prev_business_day uses the local date and skips weekends (Mon -> Fri).
+      Prints JSON: {"after": "YYYY-MM-DD", "tomorrow_utc": "YYYY-MM-DDT00:00:00Z", "now": <epoch seconds>}
+      after is the local date LOOKBACK_DAYS ago. The downloaders skip anything already
+      exported, so a generous window is cheap and covers days the skill wasn't run.
 
   python grain_helper.py new-files --since <epoch> DIR [DIR ...]
       Lists files modified at/after <epoch> under each DIR, one path per line.
@@ -18,17 +19,13 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 
-def prev_business_day(today: date) -> date:
-    d = today - timedelta(days=1)
-    while d.weekday() >= 5:  # 5 = Sat, 6 = Sun
-        d -= timedelta(days=1)
-    return d
+LOOKBACK_DAYS = 7
 
 
 def cmd_dates(_args):
     tomorrow_utc = datetime.now(timezone.utc).date() + timedelta(days=1)
     print(json.dumps({
-        "prev_business_day": prev_business_day(date.today()).isoformat(),
+        "after": (date.today() - timedelta(days=LOOKBACK_DAYS)).isoformat(),
         "tomorrow_utc": f"{tomorrow_utc.isoformat()}T00:00:00Z",
         "now": int(time.time()),
     }))

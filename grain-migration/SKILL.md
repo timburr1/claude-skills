@@ -1,6 +1,6 @@
 ---
 name: grain-migration
-description: Run the daily Grain-to-Attio sync in C:\Users\Tim\Desktop\WORK\grain-to-attio-migration - download the previous business day's Grain transcripts and videos, list the new files, refresh the playlist allowlist, and run the Attio backfill if the allowlist changed. Use when the user asks to run the grain migration, sync Grain, pull new Grain recordings, or invokes /grain-migration.
+description: Run the daily Grain-to-Attio sync in C:\Users\Tim\Desktop\WORK\grain-to-attio-migration - download the last week of Grain transcripts and videos (already-downloaded ones are skipped), list the new files, refresh the playlist allowlist, and run the Attio backfill if the allowlist changed. Use when the user asks to run the grain migration, sync Grain, pull new Grain recordings, or invokes /grain-migration.
 ---
 
 # Grain migration (daily run)
@@ -20,7 +20,7 @@ cd "$REPO" && python "$HELPER" dates
 ```
 
 This prints JSON with:
-- `prev_business_day` (YYYY-MM-DD, local date, weekends skipped: Monday -> Friday). Call it PREV.
+- `after` (YYYY-MM-DD, local date, 7 days back). Call it PREV. Already-downloaded recordings are skipped by the scripts, so the wide window is cheap and catches days the skill wasn't run.
 - `now` (epoch seconds, taken before any downloads). Call it START.
 
 Tell the user the PREV date you're using. (Ignore `tomorrow_utc`; the backfill window comes from step 5.)
