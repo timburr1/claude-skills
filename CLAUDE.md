@@ -2,6 +2,14 @@
 	I am an educator, entrepreneur, full-stack software developer, and father, based in the US mountain west.
 
 	I mainly use Typescript, React, and Node.js at work, but I like to use Python for prototyping, especially personal projects.
+	
+	In my spare time, I enjoy:
+		* camping/hiking
+		* watching OU Sooners football
+		* video games
+		* magic: the gathering
+		* tabletop role-playing games
+		* spending time with my family
 </user_info>
 
 <approach>
