@@ -17,12 +17,12 @@ All times in America/Denver. Calendars report America/Boise, which is the same o
 
 Start with `list_calendars` (Google Calendar connector) to get current IDs; don't hard-code them except where noted.
 
-1. **Personal calendars** (owned by tim.r.burr@gmail.com): primary ("personal"), "Family", and "Xanadu Calendar" (community events; mention only if something falls in range). 
+1. **Personal calendars** (owned by tim.r.burr@gmail.com): primary ("personal"), "Family", and "Tasks".
 2. **Subscribed calendars**: "Oklahoma Sooners football" (one line with kickoff time if there's a game), "Holidays in United States" (one line).
 3. **Work calendar**: `tim@helpghost.io`, accessed directly by that ID with `list_events`. Access is free/busy only: events have times but no titles. Show them as "Work: busy".
    - **Wednesdays are Tim's day watching his son.** He has a recurring all-day OOO on the work calendar for it, which shows up as a whole-day busy block. Don't list it, and don't treat personal events on Wednesday as conflicting with it. Do flag a *timed* work block on a Wednesday (a meeting landing on his day off).
    - A whole-day block on any other day means a full work day is blocked (offsite, travel, OOO); say "work: blocked all day" and don't guess why.
-   - Never ask Tim to explain his work blocks.
+   - **Daily standup**: Tim has a 10:00–10:30am standup with the other dev every day. Treat any "Work: busy" block of exactly 10:00–10:30am as standup and leave it out of the schedule. A block that starts at 10:00 with a different length (or starts or ends at another time near it) is not the standup as usual: list it with its actual times and note the change ("Work: busy 10:00–11:00, standup runs long"). Still check standup time for conflicts with personal events and report those.
 4. **Personal Gmail** (the connected Gmail account is tim.r.burr@gmail.com):
    - Inbox since the last brief window: past 24h, or since Friday morning on a Monday. Query like `in:inbox newer_than:1d -category:promotions -category:social`.
    - Sent mail from the past 7 days, to catch follow-ups Tim promised ("I'll send", "will get back to you", "let me check") with no later reply from him in the thread.
@@ -65,7 +65,7 @@ Keep it to roughly 25 lines for a day, 40 for a week. Omit any empty section rat
 - 10:30 Dentist overlaps work (busy 10:00–11:00)
 
 Schedule
-- 10:00–10:30 Work: busy
+- 10:00–11:00 Work: busy (standup runs long)
 - 6:00–10:00pm D&D
 - Idaho Power autopay
 
